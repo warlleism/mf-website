@@ -1,0 +1,101 @@
+.container-contato {
+    display: flex;
+    width: 100%;
+    height: 160vh;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    justify-content: space-evenly;
+
+    .title-contato {
+        font-size: 2rem;
+        letter-spacing: 6px;
+        font-weight: 300;
+    }
+
+    .container-info-map {
+        display: flex;
+        width: 90%;
+
+        .container-contato-child {
+            width: 60%;
+            height: 100%;
+
+            .container-info-contato {
+                width: 90%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                box-sizing: border-box;
+                padding: 10px;
+                border-radius: 5px;
+                background-color: #ffffff;
+                box-shadow: rgba(0, 0, 0, 0.281) 2px 2px 2px;
+
+                div {
+                    width: 400px;
+                    height: 80px;
+                    display: flex;
+                    margin-bottom: 20px;
+                    flex-direction: column;
+
+                    div:nth-child(2) {
+                        color: rgba(46, 46, 46, 0.603);
+                    }
+                }
+            }
+        }
+
+        .container-map {
+            width: 40%;
+            height: 100%;
+            margin-left: -40px;
+
+            video {
+                box-shadow: rgba(0, 0, 0, 0.281) 2px 2px 2px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 726px) {
+    .container-contato {
+        margin-bottom: 100px;
+
+        .container-info-map {
+            width: 90%;
+            display: flex;
+
+            .container-contato-child {
+                width: 100%;
+
+                iframe {
+                    width: 100% !important;
+                }
+
+                .container-info-contato {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    box-sizing: border-box;
+                    padding: 10px;
+                    border-radius: 5px;
+                    background-color: #ffffff;
+                    box-shadow: rgba(0, 0, 0, 0.281) 2px 2px 2px;
+
+                    div {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .container-map {
+                display: none;
+            }
+        }
+
+    }
+
+}
