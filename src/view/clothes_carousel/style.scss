@@ -3,17 +3,22 @@
     display: flex;
     overflow: hidden;
     min-height: 340px;
+    position: relative;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
 
     .container-left-arrow {
+        left: 0;
+        z-index: 9;
+        bottom: 30%;
         width: 100vw;
         display: none;
-        margin-bottom: 30px;
+        position: absolute;
+        pointer-events: none;
 
         span {
-            color: #353535;
-            font-size: 3rem;
+            color: #fcfcfc;
+            font-size: 12rem;
             animation: left infinite 2s;
         }
     }
