@@ -7,7 +7,7 @@
       scroll-behavior: smooth;
 
       body {
-          background-color: #f2f2f2;
+          background-color: #f1efe9;
       }
 
       body::-webkit-scrollbar {
@@ -93,6 +93,8 @@
 
           #txt3 {
               transform: translateX(-1500px);
+              color: rgba(192, 151, 76, 0.87);
+
           }
       }
 
@@ -113,7 +115,7 @@
           right: 0;
           height: 4px;
           width: 50%;
-          background-color: #fff;
+          background-color: rgba(192, 151, 76, 0.87);
       }
 
       .white-card>div:nth-child(3)::after {

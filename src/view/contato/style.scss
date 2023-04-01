@@ -4,13 +4,15 @@
     height: 160vh;
     align-items: center;
     flex-direction: column;
-    background-color: #f2f2f2;
+    background-color: #f1efe9;
     justify-content: space-evenly;
 
     .title-contato {
         font-size: 2rem;
+        font-weight: 400;
         letter-spacing: 6px;
-        font-weight: 300;
+        color: rgba(78, 51, 0, 0.87);
+
     }
 
     .container-info-map {
@@ -20,27 +22,34 @@
         .container-contato-child {
             width: 60%;
             height: 100%;
+            opacity: 0.8;
 
             .container-info-contato {
                 width: 90%;
                 display: flex;
+                height: 500px;
                 padding: 10px;
-                border-radius: 5px;
                 flex-direction: column;
                 box-sizing: border-box;
-                justify-content: center;
                 background-color: #ffffff;
+                justify-content: space-around;
                 box-shadow: rgba(0, 0, 0, 0.281) 2px 2px 2px;
 
                 div {
                     width: 400px;
                     height: 80px;
                     display: flex;
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
                     flex-direction: column;
 
+                    div:nth-child(1) {
+                        font-size: 1.4rem;
+                        color: rgba(78, 51, 0, 0.87);
+
+                    }
+
                     div:nth-child(2) {
-                        color: rgba(46, 46, 46, 0.603);
+                        color: rgba(78, 51, 0, 0.555);
                     }
                 }
             }
@@ -49,11 +58,21 @@
         .container-map {
             width: 40%;
             height: 100%;
+            position: relative;
             margin-left: -40px;
+            border-radius: 5px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('../../images/contato/img.jpg');
+        }
 
-            video {
-                box-shadow: rgba(0, 0, 0, 0.281) 2px 2px 2px;
-            }
+        .container-map::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(78, 51, 0, 0.226);
         }
     }
 
@@ -62,7 +81,6 @@
 @media screen and (max-width: 726px) {
     .container-contato {
         margin-top: 50px;
-        margin-bottom: 20px;
 
         .container-info-map {
             width: 90%;

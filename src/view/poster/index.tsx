@@ -12,7 +12,7 @@ const Poster = () => {
                 </div>
             </div>
             <div className='container-instagram'>
-                <a href='https://www.instagram.com/mf_granitos/' target='_blank' className='titulo-instagram' style={{ fontWeight: 300, fontSize: '2rem', textAlign: 'center' }}>DIRETO DO <strong style={{ fontWeight: 400 }}>INSTAGRAM</strong></a>
+                <a href='https://www.instagram.com/mf_granitos/' target='_blank' className='titulo-instagram' style={{ fontWeight: 300, fontSize: '2rem', textAlign: 'center', color: "#4e3300de" }}>DIRETO DO <strong style={{ fontWeight: 400, color: "#4e3300de" }}>INSTAGRAM</strong></a>
                 <Carousel_component data={Intagram_content} />
             </div>
         </>
