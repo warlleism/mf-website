@@ -1,0 +1,18 @@
+.global {
+  position: relative;
+  .copyrigh {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 10px;
+    left: 0;
+    z-index: 99999;
+    color: #292929;
+  }
+  .copyrigh{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

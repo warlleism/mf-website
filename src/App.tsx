@@ -1,14 +1,12 @@
 
-import { Provider } from './context/provider'
 import Rotas from './routes/route'
+import './styles/style.scss'
 
 function App() {
 
   return (
     <div className="App">
-      <Provider>
-        <Rotas />
-      </Provider>
+      <Rotas />
     </div>
   )
 }

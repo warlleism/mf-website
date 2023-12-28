@@ -17,7 +17,7 @@
         pointer-events: none;
 
         span {
-            color: #4e3300de;
+            color: #ffffffde;
             font-size: 12rem;
             animation: left infinite 2s;
         }
@@ -40,13 +40,12 @@
         width: 100%;
         display: flex;
         margin: 100px 0;
-        font-size: 2rem;
         align-items: center;
         justify-content: center;
 
         div:nth-child(1) {
             letter-spacing: 4px;
-            font-size: 1.5rem;
+            font-size: 2rem;
             color: rgba(78, 51, 0, 0.87);
         }
 

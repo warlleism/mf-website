@@ -12,13 +12,11 @@
         font-weight: 400;
         letter-spacing: 6px;
         color: rgba(78, 51, 0, 0.87);
-
     }
 
     .container-info-map {
         display: flex;
         width: 90%;
-
         .container-contato-child {
             width: 60%;
             height: 100%;
@@ -29,17 +27,15 @@
                 display: flex;
                 height: 500px;
                 padding: 10px;
+                gap: 10px;
                 flex-direction: column;
                 box-sizing: border-box;
                 background-color: #ffffff;
-                justify-content: space-around;
                 box-shadow: rgba(0, 0, 0, 0.281) 2px 2px 2px;
-
                 div {
                     width: 400px;
                     height: 80px;
                     display: flex;
-                    margin-bottom: 10px;
                     flex-direction: column;
 
                     div:nth-child(1) {
@@ -75,7 +71,6 @@
             background-color: rgba(78, 51, 0, 0.226);
         }
     }
-
 }
 
 @media screen and (max-width: 726px) {
