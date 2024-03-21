@@ -1,5 +1,11 @@
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 .global {
   position: relative;
+
   .copyrigh {
     position: absolute;
     text-align: center;
@@ -8,8 +14,7 @@
     left: 0;
     z-index: 99999;
     color: #292929;
-  }
-  .copyrigh{
+
     display: flex;
     flex-direction: column;
     justify-content: center;

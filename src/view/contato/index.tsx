@@ -24,11 +24,20 @@ const Contato = () => {
                         </div>
                         <div>
                             <div>Whatsapp</div>
-                            <div>(27) 99881-4012</div>
+                            <div>
+                                <a style={{ color: "rgba(78, 51, 0, 0.555)" }} href="https://api.whatsapp.com/send?phone=5527998814012&text=Meu%20Whatsapp" target="_black">
+                                    (27) 99881-4012
+                                </a>
+                            </div>
                         </div>
                         <div>
                             <div>E-mail</div>
-                            <div>warllei.s.martins@hotmail.com</div>
+                            <div>
+                                <a style={{ color: "rgba(78, 51, 0, 0.555)" }} href="mailto:warllei.s.martins@hotmail.com">
+                                    warllei.s.martins@hotmail.com
+                                </a>
+
+                            </div>
                         </div>
                         <div>
                             <div>Endereço </div>
