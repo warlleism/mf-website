@@ -10,7 +10,11 @@ export default function Rotas() {
       <Routes>
         <Route path="/"
           element={
-            <Suspense fallback={<div style={{ background: "#161616", width: '100%', height: '100vh', display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <Suspense fallback={<div style={{
+              margin: 0,
+              padding: 0,
+              background: "#161616", width: '100%', height: '100vh', display: "flex", justifyContent: "center", alignItems: "center"
+            }}>
               <ClipLoader
                 color={'#A07E43'}
                 loading={true}

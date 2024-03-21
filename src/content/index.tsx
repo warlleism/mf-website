@@ -12,7 +12,7 @@ const Main = () => {
             <Contato />
             <div
                 className='copyrigh' >
-                <div style={{ display: "flex" }}>
+                <div className="text-copyrigh" style={{ display: "flex" }}>
                     Copyright © 2024 <div style={{ fontWeight: '800', marginLeft: 3 }}> MF Eldorado Granitos.</div> Todos os direitos reservados.
                 </div>
                 <div>
