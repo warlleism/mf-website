@@ -46,18 +46,19 @@
         div:nth-child(1) {
             letter-spacing: 4px;
             font-size: 2rem;
-            color: rgba(78, 51, 0, 0.87);
+            transition: .5s ease-in-out;
         }
 
         div:nth-child(3) {
             letter-spacing: 4px;
             font-size: 1.5rem;
             cursor: pointer;
+            transition: .5s ease-in-out;
         }
 
         div {
             margin: 0px 10px;
-
+            transition: .5s ease-in-out;
         }
     }
 

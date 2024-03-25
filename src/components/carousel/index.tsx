@@ -2,7 +2,7 @@ import './style.scss'
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 
-const Carousel_component = (props: any) => {
+const Carousel_component = ({ prop, theme }: any) => {
     const [width, setWidth] = useState(0)
     const carousel = useRef<HTMLInputElement>(null);
 
@@ -13,7 +13,8 @@ const Carousel_component = (props: any) => {
     }, [])
 
     return (
-        <div className='container-carousel'>
+        <div
+            className='container-carousel'>
             <motion.div ref={carousel} className='carousel' whileTap={{ cursor: "grabbing" }}>
                 <motion.div
                     className='inner-default '
@@ -23,7 +24,7 @@ const Carousel_component = (props: any) => {
                     dragConstraints={{ right: 0, left: -width }}
                 >
                     {
-                        props.data?.map((itens: any) => {
+                        prop?.map((itens: any) => {
                             return (
                                 <motion.div
                                     key={itens.id}

@@ -3,7 +3,7 @@ import { Shirts_Male } from '../../data/data';
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 
-const Carousel = () => {
+const Carousel = ({ theme }: any) => {
 
     const [width, setWidth] = useState(0)
     const carousel = useRef<HTMLInputElement>(null);
@@ -21,9 +21,13 @@ const Carousel = () => {
     }
 
     return (
-        <div className='container-carousel'>
+        <div className='container-carousel'
+            style={{ background: !theme ? '#f1efe9' : 'rgb(17, 17, 17)' }}
+        >
             <div className='container-change-skin-gener'>
-                <div>GRANITOS</div>
+                <div
+                    style={{ color: !theme ? 'rgba(78, 51, 0, 0.87)' : '#fff' }}
+                >GRANITOS</div>
             </div>
 
             <div className='container-left-arrow' id='Arrow'>
@@ -54,7 +58,11 @@ const Carousel = () => {
                                     id='item'
                                 >
                                     <img src={itens?.img1?.img_1} alt="" />
-                                    <div style={{ fontWeight: 600, letterSpacing: 3, textTransform: 'uppercase' }}>{itens.name}</div>
+                                    <div
+                                        style={{
+                                            color: !theme ? 'rgba(78, 51, 0, 0.87)' : '#fff',
+                                            fontWeight: 600, letterSpacing: 3, textTransform: 'uppercase'
+                                        }}>{itens.name}</div>
                                 </motion.div>
 
                             )

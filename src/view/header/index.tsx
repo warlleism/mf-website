@@ -2,7 +2,7 @@
 import './style.scss'
 import { useEffect } from 'react';
 
-const Header = () => {
+const Header = ({ handlerTheme, theme }: any) => {
 
     function Drop() {
         const height = document.body.scrollHeight
@@ -37,11 +37,37 @@ const Header = () => {
     }, [])
 
     return (
-        <div className='container-header' >
+        <div className='container-header'
+            style={{ background: !theme ? '#fff' : "#161616" }}
+        >
+            {
+                theme ?
+                    <span
+                        onClick={() => handlerTheme()}
+                        style={{
+                            cursor: 'pointer',
+                            position: 'fixed', top: 10, right: 10,
+                            fontSize: 30, color: "rgb(64, 64, 64)", zIndex: 999
+                        }}
+                        className="material-symbols-outlined">
+                        nightlight
+                    </span>
+                    :
+                    <span
+                        onClick={() => handlerTheme()}
+                        style={{
+                            cursor: 'pointer',
+                            position: 'fixed', top: 10, right: 10,
+                            fontSize: 30, color: "#aa8645", zIndex: 999
+                        }}
+                        className="material-symbols-outlined">
+                        wb_sunny
+                    </span>
+            }
             <div className='white-card'>
-                <div id='txt1' style={{ letterSpacing: -10 }}>M<span style={{ fontSize: '4rem', color: "#888a8b", marginLeft: 20 }}>.</span><strong style={{ fontWeight: 100, marginLeft: 30 }}>F</strong><span style={{ fontSize: '4rem', color: "#888a8b" }}>.</span></div>
-                <div id='txt2'>Mármores</div>
-                <div id='txt3'><strong style={{ fontWeight: 100 }}>&</strong> Granitos</div>
+                <div id='txt1' style={{ letterSpacing: -10, color: !theme ? 'rgb(64, 64, 64)' : "#fff" }}>M<span style={{ fontSize: '4rem', color: "#888a8b", marginLeft: 20 }}>.</span><strong style={{ fontWeight: 100, marginLeft: 30 }}>F</strong><span style={{ fontSize: '4rem', color: "#888a8b" }}>.</span></div>
+                <div id='txt2' style={{color: !theme ? '#aa8645' : "#fff"}}>Mármores</div>
+                <div id='txt3' style={{ color: !theme ? 'rgb(64, 64, 64)' : "#aa8645" }}><strong style={{ fontWeight: 100 }}>&</strong> Granitos</div>
             </div>
             <div className='black-card'>
             </div>

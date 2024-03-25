@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import "./style.scss"
 
-const Contato = () => {
+const Contato = ({ theme }: any) => {
 
     const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -13,35 +13,55 @@ const Contato = () => {
 
 
     return (
-        <div className="container-contato">
-            <div className="title-contato">Contato</div>
+        <div className="container-contato"
+            style={{
+                background: !theme ? '#fff' : '#111',
+            }}>
+            <div className="title-contato"
+                style={{
+                    transition: ".5s", color: !theme ? 'rgba(78, 51, 0, 0.87)' : '#fff',
+                }}>Contato</div>
             <div className="container-info-map">
                 <div className="container-contato-child">
-                    <div className="container-info-contato">
-                        <div>
+                    <div className="container-info-contato"
+                        style={{
+                            background: !theme ? '#ffffff' : 'rgb(30, 30, 30)',
+                        }}>
+                        <div
+                            style={{ transition: ".5s", color: !theme ? 'rgba(78, 51, 0, 0.87)' : '#fff' }}>
                             <div>Contato</div>
-                            <div>(27) 99881-4012</div>
+                            <div
+                                style={{ transition: ".5s", color: !theme ? 'rgba(78, 51, 0, 0.87)' : 'rgb(138, 133, 133)' }}
+                            >(27) 99881-4012</div>
                         </div>
-                        <div>
+                        <div
+                            style={{ transition: ".5s", color: !theme ? 'rgba(78, 51, 0, 0.87)' : '#fff' }}>
                             <div>Whatsapp</div>
-                            <div>
-                                <a style={{ color: "rgba(78, 51, 0, 0.555)" }} href="https://api.whatsapp.com/send?phone=5527998814012&text=Meu%20Whatsapp" target="_black">
+                            <div >
+                                <a
+                                    style={{ transition: ".5s", color: !theme ? 'rgba(78, 51, 0, 0.87)' : 'rgb(138, 133, 133)' }}
+                                    href="https://api.whatsapp.com/send?phone=5527998814012&text=Meu%20Whatsapp" target="_black">
                                     (27) 99881-4012
                                 </a>
                             </div>
                         </div>
-                        <div>
+                        <div
+                            style={{ transition: ".5s", color: !theme ? 'rgba(78, 51, 0, 0.87)' : '#fff' }}>
                             <div>E-mail</div>
                             <div>
-                                <a style={{ color: "rgba(78, 51, 0, 0.555)" }} href="mailto:warllei.s.martins@hotmail.com">
+                                <a
+                                    style={{ transition: ".5s", color: !theme ? 'rgba(78, 51, 0, 0.87)' : 'rgb(138, 133, 133)' }}
+                                    href="mailto:warllei.s.martins@hotmail.com">
                                     warllei.s.martins@hotmail.com
                                 </a>
 
                             </div>
                         </div>
-                        <div>
+                        <div style={{ transition: ".5s", color: !theme ? 'rgba(78, 51, 0, 0.87)' : '#fff' }}>
                             <div>Endereço </div>
-                            <div>Estr. Ayrton Senna da Silva, 2072 - Barramares, Vila Velha - ES, 29124-386</div>
+                            <div
+                                style={{ transition: ".5s", color: !theme ? 'rgba(78, 51, 0, 0.87)' : 'rgb(138, 133, 133)' }}
+                            >Estr. Ayrton Senna da Silva, 2072 - Barramares, Vila Velha - ES, 29124-386</div>
                         </div>
                     </div>
                     <div className='map'>
