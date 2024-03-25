@@ -8,26 +8,5 @@ body {
 .global {
   position: relative;
 
-  .copyrigh {
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    bottom: 10px;
-    left: 0;
-    z-index: 99999;
-    color: #292929;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    .text-copyrigh {
-      @media (max-width: 412px) {
-        flex-direction: column;
-        gap: 5px;
-        width: 100%;
-        margin-bottom: 5px;
-      }
-    }
-  }
+ 
 }
